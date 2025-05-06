@@ -1,0 +1,13 @@
+1. **`requirements.txt`**  
+   For Python dependency installation:
+
+   ```text
+   langchain
+   langchain-core
+   langchain-community
+   langchain-ollama
+   faiss-cpu
+   numpy
+   selenium
+   webdriver-manager
+   beautifulsoup4
