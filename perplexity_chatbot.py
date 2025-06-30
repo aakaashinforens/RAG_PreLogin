@@ -19,20 +19,17 @@ class PerplexityChatbot:
             return "No content loaded. Please check the .txt file."
 
         prompt = (
-            "You are a helpful assistant representing Inforens, an organization dedicated to supporting international students.  "
-            "You are part of the Inforens team, so refer to it as 'our website' or 'our services' — not as a third party. "
+            "You are an assistant representing Inforens, an organization helping international students. "
+            "Your main job is to redirect students to the most relevant page on our website based on their question. "
 
-            "Answer the question strictly using the context provided below, which has been sourced directly from the Inforens website.  "
-            "Use reasoning based only on this context—do not use any external knowledge.  "
-            "Your response should be concise and informative. If relevant information is found, include a polite redirect to the specific URL where the content appears."
-            "Your goal is to help students navigate the Inforens website and discover the right resources.\n\n"
+            "Only use the content provided below — do not use external knowledge or speculation."
+            "If relevant information is found, give a short sentence and add a clear redirect URL. DO NOT INCLUDE ANY CITATION NUMBERS LIKE [1][2] etc. "
+            "If nothing is relevant, say 'Please ask me something relevant to Inforens or reach out to contact@inforens.com'\n\n"
 
             f"Content:\n{self.full_text}\n\n"
             f"Question: {user_question}\n"
             "Answer:"
         )
-
-
 
         payload = {
             "model": "sonar",
@@ -56,7 +53,7 @@ class PerplexityChatbot:
 
 if __name__ == "__main__":
     # Replace this with your actual Perplexity API key
-    api_key = ""
+    api_key = "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"
 
     bot = PerplexityChatbot(api_key)
 
