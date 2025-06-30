@@ -56,7 +56,7 @@ class PerplexityChatbot:
 
 if __name__ == "__main__":
     # Replace this with your actual Perplexity API key
-    api_key = "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"
+    api_key = ""
 
     bot = PerplexityChatbot(api_key)
 
