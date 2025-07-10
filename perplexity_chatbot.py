@@ -52,7 +52,7 @@ class PerplexityChatbot:
             return f"API request failed: {str(e)}"
 
 if __name__ == "__main__":
-    api_key = ""#need to insert key here
+    api_key = "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"#need to insert key here
 
     bot = PerplexityChatbot(api_key)
 
